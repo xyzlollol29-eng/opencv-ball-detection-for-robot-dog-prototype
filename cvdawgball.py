@@ -18,7 +18,7 @@ while True:
     if contours:
       if not bawlz_seen:
          print("woof")
-         bawls_seen=True
+         bawlz_seen=True
       biggest =max(contours,key=cv2.contourArea)
       if cv2.contourArea(biggest)>300:
             (x,y),radius=cv2.minEnclosingCircle(biggest)
